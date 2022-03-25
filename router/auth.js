@@ -11,7 +11,7 @@ require('../db/conn');
 const User = require('../model/userSchema');
 
 router.get('/',(req, res)=>{
-    res.sendFile(path.resolve(__dirname, "/"));
+    res.send('hello router')
 });
 router.use(cors());
 
