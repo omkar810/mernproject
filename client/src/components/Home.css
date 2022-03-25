@@ -119,7 +119,7 @@ h2 a:hover{
     width: 100%;
 }
 .homet{
-    height: 80%;
+    height: 600px;
 }
 .homet h1{
     width: 0ch;
@@ -413,7 +413,7 @@ h2 a:hover{
         margin-left: 41%;
     }
     .homet{
-        height: 100vh;
+        height: 100%;
     }
     .homet h1{
         font-size: 30px;

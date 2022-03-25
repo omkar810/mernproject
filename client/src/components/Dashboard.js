@@ -57,15 +57,21 @@ async function displayRazorpay() {
   }
 
   // creating a new order
-  const result = await axios.post("http://mernelearn.herokuapp.com/#/payment/orders");
+  const result = await axios.post("http://mernelearn.herokuapp.com/payment/orders");
+  const resu = await axios.post("https://mernelearn.herokuapp.com/payment/orders");
 
   if (!result) {
       alert("Server error. Are you online?");
       return;
   }
 
+  if (!resu) {
+    alert("Server error. Are you online?");
+    return;
+}
+
   // Getting the order details back
-  const { amount, id: order_id, currency } = result.data;
+  const { amount, id: order_id, currency } = result.data && resu.data;
 
   const options = {
       key: "rzp_test_yoxZYn5yJVgrTu",
@@ -82,9 +88,11 @@ async function displayRazorpay() {
               razorpaySignature: response.razorpay_signature,
           };
 
-          const result = await axios.post("http://mernelearn.herokuapp.com/#/payment/success", data);
+          const result = await axios.post("http://mernelearn.herokuapp.com/payment/success", data);
+          const resu = await axios.post("https://mernelearn.herokuapp.com/payment/success", data);
 
           alert(result.data.msg);
+          alert(resu.data.msg);
       },
       prefill: {
           name: userData.fname && userData.lname,
