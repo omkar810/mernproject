@@ -43,7 +43,7 @@ const Register = () => {
             history.push('/login');
         }
 
-        if(password != cpassword){
+        if(password !== cpassword){
             Swal.fire( "Password isn't match",'','error');
         }else if(password.length < 6 || password.length > 15){
             Swal.fire( "Password should be 6 to 15 digits",'','error');
