@@ -57,7 +57,7 @@ async function displayRazorpay() {
   }
 
   // creating a new order
-  const result = await axios.post("http://localhost:3000/payment/orders");
+  const result = await axios.post("http://mernelearn.herokuapp.com/payment/orders");
 
   if (!result) {
       alert("Server error. Are you online?");
