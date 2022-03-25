@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: auto;
+    text-align: center;
+    background: url('./cont.jpg') no-repeat center center/cover;
+}
+.contact h1{
+    font-weight: normal;
+}
+.contact form input{
+    font-size: 17px;
+    outline: none;
+    width: 600px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.contact form textarea{
+    font-size: 17px;
+    outline: none;
+    width: 600px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.contact form button{
+    height: 40px;
+    width: 130px;
+    margin-top: 10px;
+    background-color: #0ca750;
+    color: white;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.contact form button:hover{
+    cursor: pointer;
+    background-color: #18790fcb;
+}
+.social-media{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    background-color: honeydew;
+}
+.social-media hr{
+    color: black;
+    width: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.social-media h1{
+    font-weight: normal;
+}
+.facebook{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    color: 	#4267B2;
+}
+.instagram{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    color: #bc2a8d;
+}
+.youtube{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    color: 	#FF0000;
+}
+@media only screen and (max-width:662px){
+    .contact form input{
+        font-size: 15px;
+        outline: none;
+        width: 250px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .contact form textarea{
+        font-size: 15px;
+        outline: none;
+        width: 250px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .facebook{
+        height: 22px;
+        width: 22px;
+        margin: 10px;
+        color: 	#4267B2;
+    }
+    .instagram{
+        height: 22px;
+        width: 22px;
+        margin: 10px;
+        color: #bc2a8d;
+    }
+    .youtube{
+        height: 22px;
+        width: 22px;
+        margin: 10px;
+        color: 	#FF0000;
+    }
+    .contact h1{
+        font-size: 23px;
+    }
+    .social-media h1{
+        font-size: 21px;
+    }
+    .social-media hr{
+        width: 150px;
+    }
+    .contact{
+        height: 80vh;
+    }
+}

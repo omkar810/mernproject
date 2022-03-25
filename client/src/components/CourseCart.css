@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+}
+.warning{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 3px;
+}
+.Course-cart{
+    height: 100vh;
+    margin: auto;
+}
+.container-mc{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 50px;
+    justify-content: center;
+    height: 500px;
+}
+.course-mc{
+    border: 3px solid #4169E1;
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    margin: 10px; 
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(252, 249, 252);
+}
+.course-mc img{
+    height: 110px;
+    width: 100px;
+    padding: 11px 25px;
+}
+.course-mc h4{
+    font-size: 22px;
+    font-weight: normal;
+}
+.course-mc button{
+    background-color:#4169E1;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.course-mc button:hover{
+    padding: 8px;
+    font-size: 18px;
+}
+.ec-mc{
+    margin-top: 15px;
+}
+@media only screen and (max-width:1126px){
+    .container-mc{
+        display: flex;
+        flex-wrap: wrap;
+        height: unset;
+    }
+    .Course-cart{
+        height: 100%;
+    }
+    h1{
+        font-size: 23px;
+    }
+    .container-mc{
+        grid-gap: 9px;
+        margin-bottom: 40px;
+    }
+    .course-mc{
+        height: 230px;
+        width: 200px;
+        background-color: unset;
+    }
+    .course-mc img{
+        height: 90px;
+        width: 80px;
+    }
+    .course-mc h4{
+        font-size: 22px;
+    }
+    .course-mc button{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .course-mc button:hover{
+        padding: 6px;
+        font-size: 16px;
+    }
+}
+
+

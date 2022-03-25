@@ -1,0 +1,100 @@
+.sign-in{
+    width: 400px;
+    margin: auto;
+    padding-top: 100px;
+}
+.login{
+    height: 35rem;
+}
+.login input{
+    outline: none;
+    font-size: 17px;
+    padding: 1px;
+    margin-left: 10px;
+}
+.login h1{
+    text-align: center;
+    font-weight: normal;
+}
+.login label{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.first{
+    margin-top: 15px;
+}
+.next{
+    margin-top: 10px;
+}
+.center{
+    width: 400px;
+    text-align: center;
+}
+.login button{
+    margin-top: 20px;
+    height: 25px;
+    width: 75px;
+    cursor: pointer;
+    background-color: #0ca750; 
+    font-size: 15px;
+    color: white;
+}
+.login button:hover{
+    background-color:#18790fcb; 
+}
+.login p{
+    margin-top: 10px;
+}
+.login p a{
+    text-decoration: none;
+    color: blue;
+}
+.login p a:hover{
+    color: purple;
+}
+@media only screen and (max-width:928px){
+    .center{
+        width: 350px;
+    }
+    .login{
+        height: 90vh;
+    }
+    .sign-in{
+        width: 350px;
+    }
+    .login h1{
+        font-size: 25px;
+    }
+    .login hr{
+        width: 90px;
+    }
+    .login label{
+        font-size: 16px;
+    }
+    .login input{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:353px){
+    .center{
+        width: 250px;
+    }
+    .login{
+        height: 90vh;
+    }
+    .sign-in{
+        width: 250px;
+    }
+    .login h1{
+        font-size: 22px;
+    }
+    .login hr{
+        width: 70px;
+    }
+    .login label{
+        font-size: 15px;
+    }
+    .login input{
+        font-size: 15px;
+    }
+}

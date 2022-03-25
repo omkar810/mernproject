@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.register-m{
+    height: 35rem;
+}
+.register{
+    width: 390px;
+    margin:20px auto;
+}
+.register h1{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.register label{
+    font-weight: bold;
+    font-size: 17px;
+}
+.register input{
+    /* border: none; */
+    outline: none;
+    font-size: 17px;
+    padding: 1px;
+    /* border-bottom: 1px solid black; */
+    width: 100%;
+    margin-left: 10px;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+.register button{
+    height: 25px;
+    width: 75px;
+    cursor: pointer;
+    background-color: #0ca750;
+    font-size: 15px;
+    margin: 15px 10px;
+    border: 1px solid black;
+    color: white;
+}
+.register button:hover{
+    background-color: #18790fcb;
+}
+.register button[type="reset"]{
+    background-color: #ff0000;
+    color: white;
+    border: 1px solid black;
+}
+.register button[type="reset"]:hover{
+    background-color: #eb1010;
+}
+#lightc{
+    font-size: 15px;
+}
+.register a{
+    text-decoration: none;
+    color: blue;
+}
+.register a:hover{
+    color: purple;
+}
+@media only screen and (max-width:928px){
+    .register input{
+        width: 325px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .register label{
+        font-size: 16px;
+    }
+    .register{
+        width: 340px;
+    }
+    .register h1{
+        font-size: 25px;
+    }
+    .register hr{
+        width: 90px;
+    }
+    .register-m{
+        height: 90vh;
+    }
+}
+@media only screen and (max-width:353px){
+    .register{
+        width: 280px;
+    }
+    .register input{
+        width: 280px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .register-m{
+        height: 100vh;
+    }
+}
