@@ -82,7 +82,7 @@ async function displayRazorpay() {
               razorpaySignature: response.razorpay_signature,
           };
 
-          const result = await axios.post("http://localhost:3000/payment/success", data);
+          const result = await axios.post("http://mernelearn.herokuapp.com/payment/success", data);
 
           alert(result.data.msg);
       },
