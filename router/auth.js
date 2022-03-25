@@ -10,9 +10,9 @@ const router = express.Router();
 require('../db/conn');
 const User = require('../model/userSchema');
 
-router.get('/',(req, res)=>{
-    res.send('hello router')
-});
+// router.get('/',(req, res)=>{
+//     res.send('hello router')
+// });
 router.use(cors());
 
 router.post('/register',(req, res)=>{
