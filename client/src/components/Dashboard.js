@@ -57,7 +57,7 @@ async function displayRazorpay() {
   }
 
   // creating a new order
-  const result = await axios.post("http://mernelearn.herokuapp.com/payment/orders");
+  const result = await axios.post("http://mernelearn.herokuapp.com/#/payment/orders");
 
   if (!result) {
       alert("Server error. Are you online?");
@@ -82,7 +82,7 @@ async function displayRazorpay() {
               razorpaySignature: response.razorpay_signature,
           };
 
-          const result = await axios.post("http://mernelearn.herokuapp.com/payment/success", data);
+          const result = await axios.post("http://mernelearn.herokuapp.com/#/payment/success", data);
 
           alert(result.data.msg);
       },

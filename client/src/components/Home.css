@@ -119,7 +119,7 @@ h2 a:hover{
     width: 100%;
 }
 .homet{
-    height: 100%;
+    height: 80%;
 }
 .homet h1{
     width: 0ch;
@@ -293,7 +293,7 @@ h2 a:hover{
     display: none;
     position: absolute;
     top:17px;
-    right: 30px;
+    right: 27px;
 }
  @media only screen and (max-width:928px){
       .navbar{
