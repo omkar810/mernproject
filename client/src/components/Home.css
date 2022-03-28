@@ -295,6 +295,46 @@ h2 a:hover{
     top:17px;
     right: 25px;
 }
+.burger{
+    animation: burger 7s steps(20) infinite;
+}
+@keyframes burger{
+0%{
+    color: #FC6D6D;
+    top: 14px;
+}
+10%{
+    color: white;
+    top:17px;
+}20%{
+    color: #FC6D6D;
+    top: 16px;
+}30%{
+    color: white;
+    top:17px;
+}40%{
+    color: #FC6D6D;
+    top: 14px;
+}50%{
+    color: white;
+    top: 17px;
+}60%{
+    color: #FC6D6D;
+    top: 16px;
+}70%{
+    color: white;
+    top: 17px;
+}80%{
+    color: #FC6D6D;
+    top:14px;
+}90%{
+    color: white;
+    top: 17px;
+}100%{
+    color: #FC6D6D;
+    top: 16px;
+}
+}
  @media only screen and (max-width:928px){
       .navbar{
           height: 5rem;
