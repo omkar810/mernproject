@@ -49,19 +49,19 @@ const Register = () => {
             Swal.fire( "Password should be 6 to 15 digits",'','error');
         }else if(phone.length < 10 || phone.length > 10){
             Swal.fire( "Phone number should be 10 digits",'','error');
-        }else if(fname.length < 3){
+        }else if(fname.length < 2){
             Swal.fire( "First name should be  complete",'','error');
-        }else if(lname.length < 3){
+        }else if(lname.length < 2){
             Swal.fire( "Last name should be  complete",'','error');
         }else if(email.length < 5){
             Swal.fire( "Email id should be complete",'','error');
         }else if(fname === lname){
             Swal.fire( "First name and Last name should be diffrent",'','error');
-        }else if(fname.length > 20){
+        }else if(fname.length > 30){
             Swal.fire( "First name too large",'','error');
-        }else if(lname.length > 20){
+        }else if(lname.length > 30){
             Swal.fire( "Last name too large",'','error');
-        }else if(email.length > 25){
+        }else if(email.length > 65){
             Swal.fire( "Email id too large",'','error');
         }
     }

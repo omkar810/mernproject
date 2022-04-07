@@ -35,17 +35,17 @@ router.post('/register',(req, res)=>{
         else if(phone.length < 10 || phone.length > 10){
             return res.status(422).json({error:"Number should be 10 digits"});
         }
-        else if(fname.length < 3){
+        else if(fname.length < 2){
             return res.status(422).json({error:"First name should be  complete"});
-        }else if(lname.length < 3){
+        }else if(lname.length < 2){
             return res.status(422).json({error:"Last name should be  complete"});
         }else if(email.length < 5){
             return res.status(422).json({error:"Email id should be complete"});
-        } else if(fname.length > 20){
+        } else if(fname.length > 30){
             return res.status(422).json({error:"First name too large"});
-        }else if(lname.length > 20){
+        }else if(lname.length > 30){
             return res.status(422).json({error:"Last name too large"});
-        }else if(email.length > 25){
+        }else if(email.length > 65){
             return res.status(422).json({error:"Email id too large"});
         }
         else if(fname === lname){
