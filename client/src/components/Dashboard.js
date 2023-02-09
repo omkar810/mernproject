@@ -68,7 +68,7 @@ async function displayRazorpay() {
   const { amount, id: order_id, currency } = result.data;
 
   const options = {
-      key: "rzp_test_yoxZYn5yJVgrTu",
+      key: "rzp_test_pSMmHkbdjbEAAs",
       amount: amount.toString(),
       currency: currency,
       name: "E-learning",
