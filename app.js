@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require("dotenv");
 const express = require('express');
-// const path = require('path');
+const path = require('path');
 const app = express();
 
 dotenv.config({path: './config.env'});
@@ -21,6 +21,11 @@ const PORT = process.env.PORT || 5000;
 // app.get('/signup', middleware,(req, res)=>{
 //     res.send('hello signup')
 // });
+
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get("*", function(req,res){
+   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 app.get('/signin',(req, res)=>{
     res.send('hello signin')
 });
